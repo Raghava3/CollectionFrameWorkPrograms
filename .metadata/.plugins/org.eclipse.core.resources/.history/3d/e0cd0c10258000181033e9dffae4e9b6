@@ -1,0 +1,18 @@
+package com.raghava.IdentityHashMapPrograms;
+
+import java.util.IdentityHashMap;
+
+public class IdentityHashMapClass {
+	
+	public static void main(String[] args)
+	{
+	
+		IdentityHashMap hashMap=new IdentityHashMap();
+		Integer i1=new Integer(10);
+		Integer i2=new Integer(10);
+		
+		
+		
+		}
+
+}

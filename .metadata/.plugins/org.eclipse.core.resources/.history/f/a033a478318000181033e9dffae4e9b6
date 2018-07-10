@@ -1,0 +1,42 @@
+package com.raghava.WeakHashMapPrograms;
+
+import java.util.HashMap;
+
+class Temp
+{
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "temp";
+	}
+	
+	 @Override
+	protected void finalize() throws Throwable {
+	
+		 System.out.println("excecuting finalize method");
+	 }
+}
+
+public class WeakHashMapClass {
+	
+	public static void main(String[] raghav)
+	{
+		//this is Hashmap 
+		HashMap hashMap=new  HashMap();
+		//object is created 
+		Temp temp=new Temp();
+		hashMap.put(temp, "raghav");
+		
+		//making refence object null  and called garbage collector
+		temp=null;
+		System.gc();
+		
+		
+		
+		 System.out.println(hashMap);
+		
+		
+				
+	}
+
+}

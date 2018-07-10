@@ -1,0 +1,46 @@
+package com.raghava.TressSetPrograms;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class TreeSetClass {
+	
+	
+	
+	public static void main(String[] args)
+	{
+		TreeSet set=new TreeSet();
+	    set.add("a");
+	    set.add("A");
+	    set.add(new Integer(10));//you will get class cast exception
+	    set.add(null);//null pointer exception
+	    System.out.println(set);
+	    
+	}
+		
+
+}
+
+class MyComparator implements Comparator
+{
+
+	@Override
+	public int compare(Object arg0, Object arg1) {
+
+		Integer i1=(Integer)arg0;
+		Integer i2=(Integer)arg1;
+		
+		if(i1>i2)
+		{
+			return -1;
+		}
+		else if(i1<i2)
+		{
+			return +1;
+		}
+		else
+			return 0;
+	}
+	
+	
+}

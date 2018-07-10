@@ -1,0 +1,18 @@
+package com.raghava.TressSetPrograms;
+
+import java.util.TreeSet;
+
+public class TreeSetClass {
+	
+	
+	public static void main(String[] args)
+	{
+		TreeSet set=new TreeSet();
+	    set.add("a");
+	    set.add("A");
+	    System.out.println(set);
+	    
+	}
+		
+
+}

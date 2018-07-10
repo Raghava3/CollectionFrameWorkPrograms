@@ -1,0 +1,29 @@
+package com.raghava.LinkedHashMapPrograms;
+
+import java.util.LinkedHashMap;
+
+public class LinkedHashMapClass {
+
+	public static void main(String[] args)
+	{
+		LinkedHashMap linkedHashMap= new LinkedHashMap();
+		
+		linkedHashMap.put("Lion", 1);
+		linkedHashMap.put("tiger", 2);
+		
+		
+		//here insertion order is preserved
+		System.out.println(linkedHashMap);
+		
+		
+		Integer i1=new Integer(10);
+		Integer i2=new Integer(10);
+		
+		
+		int i3=10;
+		int i4=10;
+		
+		System.out.println(i1==i2);
+		System.out.println(i1.equals(i2));
+	}
+}

@@ -1,0 +1,21 @@
+package com.raghava.HashMapPrograms;
+
+import java.util.HashMap;
+
+public class HashMapClass {
+
+	
+	public static void main(String[] raghava)
+	{
+		HashMap hashMap=new HashMap();
+		
+		hashMap.put("lion", 1);
+		hashMap.put("tiger", 2);
+		
+		//this method return key in set
+		System.out.println(hashMap.keySet());
+				
+		System.out.println(hashMap.values());
+		}
+	
+}

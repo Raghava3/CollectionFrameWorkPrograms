@@ -1,0 +1,22 @@
+package com.raghava.HashTablePrograms;
+
+ class Temp
+{
+	int i;
+
+	public Temp(int i)
+	{
+		this.i=i;
+	}
+ @Override
+public String toString() {
+	// TODO Auto-generated method stub
+	return i+"";
+}
+}
+
+public class HashtableClass {
+
+	
+	
+}

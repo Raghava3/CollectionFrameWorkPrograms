@@ -1,0 +1,27 @@
+package com.raghava;
+
+
+class Parent
+{
+	public String value="child";
+
+	public String getValue() {
+		return value;
+	}
+
+}
+
+class Child extends Parent
+{
+	public String value="Parent";
+
+	public String getValue() {
+		return value;
+	}
+
+	
+}
+
+public class Test {
+
+}

@@ -1,0 +1,91 @@
+package com.raghava.collections.comparable;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class CollectionsComparable {
+
+	
+	public static void main(String[] args)
+	{
+		ArrayList<Watch> arrayList=new ArrayList<Watch>();
+		
+		Watch watch=new Watch();
+		watch.setDate(1);
+		watch.setTime(2);
+		
+		Watch watch2=new Watch();
+	    watch2.setDate(1);
+	    watch.setTime(1);
+
+	    arrayList.add(watch);
+	    arrayList.add(watch2);
+	    
+	    Iterator<Watch> iterator=arrayList.iterator();
+	    
+	    while(iterator.hasNext())
+	    {
+	    Watch w=iterator.next();
+	    w.getDate();
+	    w.getTime();
+	    }
+	    
+	    
+		
+		
+	}
+	
+}
+
+class Watch implements Comparable<Watch>
+{
+	
+	private int  time;
+	private int date;
+	public int getTime() {
+		return time;
+	}
+	public void setTime(int time) {
+		this.time = time;
+	}
+	public int getDate() {
+		return date;
+	}
+	public void setDate(int date) {
+		this.date = date;
+	}
+	
+	
+	//this is implementing the compareTo method
+	@Override
+	public int compareTo(Watch a) {
+
+		if(this.date==a.date)
+		{
+			
+			if(this.time<a.time)
+			{
+				return +1;
+			}
+			else if (this.time>a.time) {
+				return -1;
+			}
+			else
+			{
+				return 0;
+			}
+			
+		}
+		else if(this.date<a.date)
+		{
+			return +1;
+		}
+		else
+		{
+			return -1;
+		}
+	}
+	
+	
+	
+}

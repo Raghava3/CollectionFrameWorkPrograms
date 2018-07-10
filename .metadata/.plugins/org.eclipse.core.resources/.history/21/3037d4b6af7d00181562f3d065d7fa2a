@@ -1,0 +1,16 @@
+package com.raghava;
+
+
+class Parent
+{
+	public String value="child";
+
+	public String getValue() {
+		return value;
+	}
+
+}
+
+public class Test {
+
+}

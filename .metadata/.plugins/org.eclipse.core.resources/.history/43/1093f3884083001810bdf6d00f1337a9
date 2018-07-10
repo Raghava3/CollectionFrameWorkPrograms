@@ -1,0 +1,48 @@
+package com.raghava.HashMapPrograms;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class IdentifyingTheAlpha {
+	
+	public static void main(String[] args)
+	{
+		String s ="ABAAAACD";
+		char[] a = s.toCharArray();
+		
+		HashMap hashMap=new HashMap();
+		int i=0,k=0;
+		
+		hashMap.put(a[0], 2);
+		
+		System.out.println(hashMap);
+		  
+		 for(int j=1;j<a.length;j++)
+		 {
+			  if(hashMap.containsKey(a[j]))
+			  {
+			   	System.out.println("coming inside");
+                static int l= (int) hashMap.get(a[j]);
+                System.out.println(l);
+                hashMap.put(a[j], l++);
+			   	
+			  }
+			  else
+		    	{
+				hashMap.put(a[j], 1);
+			    }
+			  
+		 
+	
+     		// i++;
+		}
+		
+System.out.println(hashMap);		
+		
+		
+		
+	}
+
+}

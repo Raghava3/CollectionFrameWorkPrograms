@@ -1,0 +1,28 @@
+package com.raghava.HashsetPrograms;
+
+import java.util.HashSet;
+
+public class Hashset {
+	
+	public static void main(String[] args)
+	{
+		HashSet hashSet=new HashSet<>();
+		
+		hashSet.add("r");
+		hashSet.add("a");
+		hashSet.add("g");
+		hashSet.add("h");
+		hashSet.add("a");
+		hashSet.add("v");
+		hashSet.add("p");
+		hashSet.add("d");
+		
+		System.out.println(hashSet);
+		
+		
+		
+	}
+	
+	
+
+}
