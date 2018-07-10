@@ -9,7 +9,6 @@ public class CollectionsComparable {
 	
 	public static void main(String[] args)
 	{
-	
 		ArrayList<Watch> arrayList=new ArrayList<Watch>();
 		
 		Watch watch=new Watch();
@@ -23,8 +22,6 @@ public class CollectionsComparable {
 	    arrayList.add(watch);
 	    arrayList.add(watch2);
 	    
-	    Watch watch3=new Watch();
-	    
 	    
 	    //this is before sorting
 	    
@@ -37,8 +34,7 @@ public class CollectionsComparable {
 	    System.out.println("this is time"+w.getTime());
 	    }
 	    
-	    // we are sorting watch object so we have to give our own implementation for compareTo to 
-	    //make its comparable
+	    
 	    Collections.sort(arrayList);
 	    
         //this is after sorting
@@ -53,8 +49,8 @@ public class CollectionsComparable {
 	    }
 	    
 	    
-	int n=	Collections.binarySearch(arrayList, watch3);
-		System.out.println(n);
+		
+		
 	}
 	
 }

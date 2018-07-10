@@ -23,8 +23,6 @@ public class CollectionsComparable {
 	    arrayList.add(watch);
 	    arrayList.add(watch2);
 	    
-	    Watch watch3=new Watch();
-	    
 	    
 	    //this is before sorting
 	    
@@ -53,7 +51,7 @@ public class CollectionsComparable {
 	    }
 	    
 	    
-	int n=	Collections.binarySearch(arrayList, watch3);
+	int n=	Collections.binarySearch(arrayList, watch);
 		System.out.println(n);
 	}
 	
