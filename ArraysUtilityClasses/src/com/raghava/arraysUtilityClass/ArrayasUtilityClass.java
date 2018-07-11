@@ -1,0 +1,79 @@
+package com.raghava.arraysUtilityClass;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class ArrayasUtilityClass {
+
+
+/*  this class for Arrays util class present in java.util pacakage*/
+	
+	public static void main(String[] args)
+	{
+		
+		int[] a={10,5,6,3,60,11};
+		System.out.println("this is before sorting");
+		for(int a1:a)
+		{
+			System.out.println(a1);
+		}
+		
+		Arrays.sort(a);
+		System.out.println("this is after sorting");
+		
+		for(int a1:a)
+		{
+			System.out.println(a1);
+		}
+		
+		
+		String[]  s={"A","Z","B"};
+		
+		System.out.println("this is before sorting");
+		for(String a1:s)
+		{
+			System.out.println(a1);
+		}
+		
+		System.out.println("this is after sorting");
+		Arrays.sort(s);
+		for(String a1:s)
+		{
+			System.out.println(a1);
+		}
+		
+		
+		
+		System.out.println("this is using customized sorting");
+		Arrays.sort(s,new MyComparator());
+		for(String a1:s)
+		{
+			System.out.println(a1);
+		}
+		
+		
+		
+	}
+
+}
+
+
+class MyComparator implements Comparator
+{
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		
+		String s1=(String)o1;
+		String s2=(String)o2;
+		
+		return s2.compareTo(s1);
+		
+		
+	}
+
+	
+}
